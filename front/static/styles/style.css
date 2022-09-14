@@ -1,0 +1,69 @@
+html,
+body{
+  height: 100%;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand img{
+  height: 3rem;
+  width: 10rem;
+}
+
+.gradient{
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.page-header{
+  margin-top: 4rem;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.feature ul{
+  padding-left: 2rem;
+}
+
+.gallery{
+  color: white;
+}
+
+.gallery img{
+  border-radius: 1rem;
+  height: 30rem;
+}
+
+.services{
+  background-color: #e3e3e3;
+}
+
+.img-services{
+  width: fit-content;
+}
+
+#periodoncia{
+  width: 17rem;
+}
+
+.contact{
+  color: white;
+  padding-bottom: 4rem;
+}
+
+footer {
+  color: white;
+  background-color: black;
+}
+
+.footer-flex-ctn {
+  display: flex;
+}
+
+.footer-flex-ctn div {
+  padding: 1% 3%;
+}
+
+.footer-flex-ctn div i {
+  width: 1rem;
+}

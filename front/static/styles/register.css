@@ -1,0 +1,17 @@
+html,
+body {
+  height: 100%;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand img {
+  height: 3rem;
+  width: 10rem;
+}
+
+.mensaje{
+  font-size: 0.8rem;
+  color: gray;
+}

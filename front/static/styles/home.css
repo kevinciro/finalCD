@@ -1,0 +1,25 @@
+html,
+body {
+  height: 100%;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.edit {
+  height: 2.3em;
+  width: 3em;
+  background-color: transparent;
+  opacity: .5;
+  cursor: pointer;
+  border: none;
+}
+
+.edit:hover {
+  opacity: 1;
+}
+
+.edit img {
+  height: 100%;
+  width: 100%;
+}

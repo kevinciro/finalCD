@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Poppins&display=swap"
+    rel="stylesheet">
+  <title>Odontologia</title>
+  <link rel="stylesheet" href="../static/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/styles/home.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Hola, <span class="usrName">nombre</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active nav-link-1" href="#">Mi perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-1" href="#">Mis turnos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-1" href="#">Nuevo turno</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout" data-bs-toggle="modal" data-bs-target="#modalSalir">Salir</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="profile ">
+      <div class="container">
+        <h1 class="mt-5 ">Perfil</h1>
+        <div class="row mt-3">
+          <form action="" class="mb-3">
+            <div class="col-md-7 d-flex align-items-center mb-3">
+              <label for="exampleFormControlInput1" class="form-label me-3">
+                Nombre:
+              </label>
+              <input class="form-control me-3 " id="propiedadUsuario" type="text" value="nombre"
+                aria-label="Disabled input example" disabled readonly>
+              <button type="submit" class="edit">
+                <img src="../static/img/edit.png" alt="Agregar Tarea">
+              </button>
+            </div>
+            <div class="col-md-7 d-flex align-items-center mb-3">
+              <label for="exampleFormControlInput1" class="form-label me-3">Apellido: </label>
+              <input class="form-control me-3" id="propiedadUsuario" type="text" value="apellido"
+                aria-label="Disabled input example" disabled readonly>
+              <button type="submit" class="edit">
+                <img src="../static/img/edit.png" alt="Agregar Tarea">
+              </button>
+            </div>
+            <div class="col-md-7 d-flex align-items-center mb-3">
+              <label for="exampleFormControlInput1" class="form-label me-3">DNI: </label>
+              <input class="form-control me-3" id="propiedadUsuario" type="text" value="dni"
+                aria-label="Disabled input example" disabled readonly>
+              <button type="submit" class="edit">
+                <img src="../static/img/edit.png" alt="Agregar Tarea">
+              </button>
+            </div>
+            <div class="col-md-7 d-flex align-items-center mb-3">
+              <label for="exampleFormControlInput1" class="form-label me-3">Direccion: </label>
+              <input class="form-control me-3 direccion" id="propiedadUsuario" type="text"
+                value="Provincia, Localidad, Calle, numero" aria-label="Disabled input example" disabled readonly>
+              <button type="submit" class="edit">
+                <img src="../static/img/edit.png" alt="Agregar Tarea">
+              </button>
+            </div>
+
+            <div class="dir-oculto">
+
+            </div>
+
+            <button class="btn btn-primary botonGuardar" type="submit" disabled>
+              Guardar
+            </button>
+            <button class="btn btn-primary botonGuardar " type="submit" disabled>
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-danger">
+              Eliminar perfil
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- <section class="myTurns">
+    <div class="container">
+      <h1>Mis Turnos</h1>
+      <div class="row mt-3">
+        <div class="card col-md-7 mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Turno con Nombre Odontologo</h5>
+            <p class="card-text">El dia 00, del mes 00, del año 0000; a las 00:00:00</p>
+            <a href="#" class="btn btn-primary">Cancelar turno</a>
+          </div>
+        </div>
+        <div class="card col-md-7 mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Turno con Nombre Odontologo</h5>
+            <p class="card-text">El dia 00, del mes 00, del año 0000; a las 00:00:00</p>
+            <a href="#" class="btn btn-primary">Cancelar turno</a>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary mb-3">
+        Agendar un nuevo turno
+      </button>
+    </div>
+  </section>
+
+  <section class="newTurn">
+    <div class="container">
+      <h1>Nuevo Turno</h1>
+      <div class="row mt-3">
+        <div class="col-md-7 mb-3">
+          <form action="">
+            <label for=" startDate">Seleccione la fecha en que desea el turno:</label>
+            <input id="startDate" class="form-control" type="date" value="" />
+          </form>
+        </div>
+        <div class="card col-md-7 mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Turno con Nombre Odontologo</h5>
+            <p class="card-text">El dia 00, del mes 00, del año 0000; a las 00:00:00</p>
+            <a href="#" class="btn btn-primary">Agendar turno</a>
+          </div>
+        </div>
+        <div class="card col-md-7 mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Turno con Nombre Odontologo</h5>
+            <p class="card-text">El dia 00, del mes 00, del año 0000; a las 00:00:00</p>
+            <a href="#" class="btn btn-primary">Agendar turno</a>
+          </div>
+        </div>
+      </div>
+  </section> -->
+
+  <div class="modal fade" id="modalSalir" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title " id="exampleModalLongTitle">Mensaje</h5>
+          </button>
+        </div>
+        <div class="modal-body">
+          Seguro que desea salir?
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+          <button type="button" class="btn btn-primary salir">Si</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../static/js/bootstrap.min.js"></script>
+  <script src="../static/js/homePaciente.js"></script>
+</body>
+
+</html>

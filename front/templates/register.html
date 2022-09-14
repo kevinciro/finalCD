@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Poppins&display=swap"
+    rel="stylesheet">
+  <title>Odontologia</title>
+  <link rel="stylesheet" href="../static/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/styles/register.css">
+</head>
+
+<body>
+
+  <div class="container mt-10">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-5">
+        <h1 class="d-flex justify-content-center mt-3">
+          Registrarse
+        </h1>
+        <form action="" id="formularioRegistro">
+          <div class="mb-3r mt-4">
+            <label for="first_name" class="form-label">Nombre*</label>
+            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Ingrese su nombre">
+          </div>
+          <div class="mb-3r mt-4">
+            <label for="last_name" class="form-label">Apellido*</label>
+            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Ingrese su apellido">
+          </div>
+          <div class="mb-3r mt-4">
+            <label for="dni" class="form-label">DNI*</label>
+            <input type="text" class="form-control" id="dni" name="dni" placeholder="Ingrese su DNI">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="password" class="form-label">Contraseña*</label>
+            <input type="password" class="form-control" id="password" name="password"
+              placeholder="Ingrese su contraseña">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="confirm_password" class="form-label">Verificar Contraseña*</label>
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password"
+              placeholder="Ingrese su contraseña">
+          </div>
+          <div class="mb-3r mt-4">
+            <label for="exampleFormControlInput1" class="form-label">Provincia</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1"
+              placeholder="Ingrese la provincia donde vive">
+          </div>
+          <div class="mb-3r mt-4">
+            <label for="exampleFormControlInput1" class="form-label">Localidad</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1"
+              placeholder="Ingrese la localidad donde vive">
+          </div>
+          <div class="mb-3r mt-4">
+            <label for="exampleFormControlInput1" class="form-label">Calle</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1"
+              placeholder="Ingrese la calle donde vive">
+          </div>
+          <div class="mb-3r mt-4">
+            <label for="exampleFormControlInput1" class="form-label">Numero</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1"
+              placeholder="Ingrese el numero donde vive">
+          </div>
+
+          <div class="mb-3 d-flex justify-content-center align-items-center mt-4">
+            <button class="btn btn-primary me-3" type="submit">Registrarse</button>
+            <button class="btn btn-primary cancelar" type="submit">
+              Cancelar
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="mb-3 d-flex justify-content-center">
+        <p class="mensaje">
+          La informacion marcada con * es obligatoria.
+        </p>
+      </div>
+
+    </div>
+    <div id="response" style="display:none; margin-top:10px">
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <script src="../static/js/bootstrap.min.js"></script>
+  <script src="../static/js/register.js"></script>
+</body>
+
+</html>
